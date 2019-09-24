@@ -1,5 +1,9 @@
-USAGE: run.sh MODE
-MODE: -c, --create = creates a snapshot of apps
+USAGE: 
+      *nix ==> run.sh MODE
+      windows (as admin) ==> run.ps1 MODE 
+      
+MODE: 
+      -c, --create = creates a snapshot of apps
       -a, --apply  = apply snapshot, i.e. download apps and copy config
       -h, --help   = this
 
