@@ -1,0 +1,4 @@
+linuxAppData/
+winAppData/
+node_modules/
+*.swp

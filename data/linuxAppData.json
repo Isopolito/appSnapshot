@@ -1,0 +1,16 @@
+[
+    {
+        "name": "vim",
+        "installName": "vim",
+        "configBasePath": "$HOME"
+    },
+    {
+        "name": "vim-colors",
+        "configBasePath": "$USER_SHARE/vim/vim81/colors"
+    },
+    {
+        "name": "keepass",
+        "installName": "keepassx",
+        "configBasePath": "$HOME/data/keepass"
+    }
+]

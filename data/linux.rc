@@ -1,0 +1,3 @@
+packageInstall=apt-get install -y
+variables=$HOME:~|$USER_SHARE:/usr/share
+
