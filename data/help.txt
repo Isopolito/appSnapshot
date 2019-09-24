@@ -4,11 +4,11 @@ MODE: -c, --create = creates a snapshot of apps
       -h, --help   = this
 
 CONFIGURATION: 
-    data/linuxConfig: Linux configuration file
+    data/linux.rc: Linux configuration file
     data/linuxAppData.json: JSON formatted file that contains the name of the apps,
         the commands to download them, and config file locations.
 
-    data/winConfig: Windows configuration file
+    data/win.rc: Windows configuration file
     data/winAppData.json: JSON formatted file that contains the name of the apps,
         the commands to download them, and config file locations.
 
