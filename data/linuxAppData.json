@@ -2,15 +2,18 @@
     {
         "name": "vim",
         "installName": "vim",
-        "configBasePath": "$HOME"
+        "configBasePath": "$HOME",
+        "configFiles": [".vimrc"]
     },
     {
         "name": "vim-colors",
-        "configBasePath": "$USER_SHARE/vim/vim81/colors"
+        "configBasePath": "$USER_SHARE/vim/vim81/colors",
+        "configFiles": ["zenburn.vim", "solarized.vim", "gruvbox.vim"]
     },
     {
         "name": "keepass",
         "installName": "keepassx",
-        "configBasePath": "$HOME/data/keepass"
+        "configBasePath": "$HOME/data/keepass",
+        "configFiles": ["Current.kdbx"]
     }
 ]

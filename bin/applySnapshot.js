@@ -11,8 +11,6 @@ const appDataFilesPath = process.argv[4];
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
-const makeAppDataDirIfNeeded = () => shell.test('-d', appDataFilesPath) || shell.mkdir(appDataFilesPath);
-
 const installAppsAndCopyFiles = (config, appData) => {
     for (let app of appData) {
         // Install app
@@ -42,9 +40,8 @@ const assertProperArgs = () => {
     process.exit(1);
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
-makeAppDataDirIfNeeded();
 assertProperArgs();
 
 const config = shared.getConfig(configFilePath);
