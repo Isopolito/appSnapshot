@@ -4,5 +4,122 @@
         "installName": "git.install",
         "configBasePath": "$Home",
         "configFiles": [".bash_history", ".bash_profile", ".bashrc", ".gitconfig"]
+    },
+    {
+        "name": "resharper",
+        "installName": "resharper"
+    },
+    {
+        "name": "signal",
+        "installName": "signal",
+        "configBasePath": "$Home/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup",
+        "configFiles": ["signal.lnk"]
+    },
+    {
+        "name": "authoHotKey",
+        "installName": "autohotkey",
+        "configBasePath": "$SourceCode/AutoHotkey",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "slack",
+        "installName": "slack"
+    },
+    {
+        "name": "ssms",
+        "installName": "sql-server-management-studio",
+        "configBasePath": "$ProgramFilesX86/Microsoft SQL Server Management Studio 18/Common7/IDE",
+        "configFiles": ["ssms.pkgundef"]
+    },
+    {
+        "name": "ssmsConfig",
+        "configBasePath": "$Home/AppData/Roaming/Microsoft/SQL Server Management Studio",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "sqlSearch",
+        "installName": "sqlsearch"
+    },
+    {
+        "name": "MsAZureStorage",
+        "installName": "microsoftazurestorageexplorer"
+    },
+    {
+        "name": "LinqPad",
+        "installName": "linqpad",
+        "configBasePath": "$ProgramFilesX86/LINQPad5",
+        "configFiles": ["LINQPad.exe.config"]
+    },
+    {
+        "name": "LinqPadUserSettings",
+        "configBasePath": "$Home/AppData/Local/LINQPad",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "chrome",
+        "installName": "gogglechrome",
+        "configBasePath": "$Home/AppData/Local/Google/Chrome/User Data/Default",
+        "configFiles": ["Preferences", "History", "Bookmarks"]
+    },
+    {
+        "name": "Firefox",
+        "installName": "firefox",
+        "configBasePath": "$Home/AppData/Roaming/Mozilla/Firefox/Profiles",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "Cmder",
+        "installName": "cmder",
+        "configBasePath": "$ProgramFilesX86/cmder/config",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "gitBash",
+        "installName": "git.install",
+        "configBasePath": "$Home",
+        "configFiles": [".bash_history", ".bash_profile", ".bashrc", ".gitconfig"]
+    },
+    {
+        "name": "gitCredentialManager",
+        "installName": "git-credential-manager-for-windows"
+    },
+    {
+        "name": "vim",
+        "installName": "vim",
+        "configBasePath": "$Home",
+        "configFiles": ["_vimrc", "_viminfo", "mthesaur.txt"]
+    },
+    {
+        "name": "vimColors",
+        "configBasePath": "$ProgramFilesX86/vim/vim81/colors",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "p4merge",
+        "installName": "p4merge",
+        "configBasePath": "$Home/.p4merge",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "visualStudio2017",
+        "installName": "visualstudio2017professional",
+        "configBasePath": "$Home/AppData/Roaming/Microsoft/VisualStudio",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "vscode",
+        "configBasePath": "$Home/.vscode",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "vscode-extensions",
+        "installName": "vscode",
+        "configBasePath": "$Home/AppData/Roaming/Code/User",
+        "configFiles": ["*"]
+    },
+    {
+        "name": "redis",
+        "installName": "redis"
     }
-    ]
+
+]
