@@ -6,11 +6,15 @@ const getConfig = configFilePath => {
         .split('\n')
         .filter(Boolean);
 
-    return lines.reduce((acc, curr) => {
+    const configgers = lines.reduce((acc, curr) => {
         const kvp = curr.split('=');
         if (kvp.length === 2) acc[kvp[0]] = kvp[1];
         return acc;
     }, {});
+
+    //console.log(JSON.stringify(configgers, null, 4));
+
+    return configgers;
 }
 
 const getAppData = appDataConfigPath => {
@@ -24,12 +28,13 @@ const getAppData = appDataConfigPath => {
 
 const interpolatePaths = (path, variablesConfigData) => {
     variablesConfigData.split('|').forEach(variable => {
-        const kvp = variable.split(':');
+        const kvp = variable.split(';');
         if (kvp.length !== 2) {
             console.log(`Bad variable config value: ${variable}...skipping.`);
             return;
         }
 
+        //console.log(`\nkvp: ${kvp}`);
         path = path.replace(kvp[0], kvp[1]);    
     });
 

@@ -1,0 +1,15 @@
+USAGE: 
+      powershell -File run.ps1 MODE 
+      
+MODE: 
+      -create = creates a snapshot of apps
+      -apply  = apply snapshot, i.e. download apps and copy config
+      -help   = this
+
+CONFIGURATION: 
+    data/win.rc: Windows configuration file
+    data/winAppData.json: JSON formatted file that contains the name of the apps,
+        the commands to download them, and config file locations.
+
+    NOTE: multiple entries can exist in appData.json for the same program. This allows for different configuration
+        directories to be used. Only supply 'installName' for one of them though, so the install only happens once.

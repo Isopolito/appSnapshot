@@ -7,7 +7,8 @@ mode=$1
 #################
 
 printHelpAndQuit() {
-    cat 'data/help.txt'
+    cat 'data/generalHelp.txt'
+    cat 'data/linuxHelp.txt'
 }
 
 isCreateSnapshotMode() {
@@ -47,7 +48,7 @@ installNodeIfNeeded() {
     fi
 
     installCommand=$(getConfigValue 'packageInstall')
-    eval $installCommand -y npm && npm install shelljs
+    eval $installCommand -y npm
 }
 
 ###################
@@ -55,6 +56,7 @@ installNodeIfNeeded() {
 ###################
 
 installNodeIfNeeded
+npm install shelljs
 
 if [[ $(isCreateSnapshotMode) = 'true' ]] ;then
     createSnapshot

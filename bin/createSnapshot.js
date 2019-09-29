@@ -1,6 +1,7 @@
 'use strict';
 const shell = require('shelljs');
 const fs = require('fs');
+const path = require('path');
 const shared = require('./shared');
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -21,10 +22,14 @@ const makeAppDataDirIfNeeded = () => shell.test('-d', appDataFilesPath) || shell
 
 const copyConfigFiles = (config, appData) => {
     for (let app of appData) {
-        const appDirName = `${appDataFilesPath}/${app.name}`;
+        const appDirName = path.normalize(path.join(appDataFilesPath, app.name));
         shell.test('-d', appDirName) || shell.mkdir(appDirName);
+        if (!app.configFiles) continue;
         app.configFiles.forEach(file => {
-            const sourceFile = shared.interpolatePaths(`${app.configBasePath}/${file}`, config.variables);
+            const joinedPath = path.join(app.configBasePath, file);
+            const sourceFile = shared.interpolatePaths(joinedPath, config.variables);
+
+            console.log(`Copying ${path.normalize(sourceFile)} to ${appDirName}`);
             shell.cp('-rf', sourceFile, appDirName);
         });
     }

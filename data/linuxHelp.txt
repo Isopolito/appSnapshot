@@ -1,0 +1,15 @@
+USAGE: 
+      run.sh MODE
+
+MODE: 
+      -c, --create = creates a snapshot of apps
+      -a, --apply  = apply snapshot, i.e. download apps and copy config
+      -h, --help   = this
+
+CONFIGURATION: 
+    data/linux.rc: Linux configuration file
+    data/linuxAppData.json: JSON formatted file that contains the name of the apps,
+        the commands to download them, and config file locations.
+
+    NOTE: multiple entries can exist in appData.json for the same program. This allows for different configuration
+        directories to be used. Only supply 'installName' for one of them though, so the install only happens once.

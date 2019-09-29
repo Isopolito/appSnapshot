@@ -1,0 +1,3 @@
+packageInstall=choco install -y
+variables=$Tools;C:\\tools|$SourceCode;C:\\src|$ProgramFilesX86;C:\\Program Files (x86)|$Home;C:\\Users\\ash|$ProgramFiles;C:\\Program Files
+

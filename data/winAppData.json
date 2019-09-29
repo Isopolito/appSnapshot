@@ -1,0 +1,8 @@
+[
+    {
+        "name": "gitBash",
+        "installName": "git.install",
+        "configBasePath": "$Home",
+        "configFiles": [".bash_history", ".bash_profile", ".bashrc", ".gitconfig"]
+    }
+    ]

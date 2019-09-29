@@ -1,0 +1,18 @@
+AppSnapshot
+-----------
+
+The idea is to make it easier to spin up new machines by installing the apps you use with their configuration files. In 'create' mode, data from a JSON file (data/*AppData.json) is used to
+find and copy application configuration files. In 'apply' mode, the apps from the JSON file are installed via the configured package manager and the config files that were copied in 'create'
+mode are then copied back to their respective locations. Again, all of this is driven from that same JSON application configuration file. Once a snapshot is made (i.e. 'create' mode) the
+whole appSnapshot directory can be zipped up, moved to new machine, unzipped, and ran in 'apply' mode. 
+
+Notes: 
+    * You can use the sensible path separator (i.e. '/') even on windows and it will be handled correctly.
+
+TODO: 
+    * Add a flag to where no work is actually done, but everything is 
+		printed to the console so you can see what *would* be done.
+    * Add better error handling and logging
+
+
+
