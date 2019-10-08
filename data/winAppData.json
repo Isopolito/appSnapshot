@@ -118,6 +118,10 @@
         "configFiles": ["*"]
     },
     {
+        "name": "neovim",
+        "installName": "neovim",
+    },
+    {
         "name": "vscode-extensions",
         "installName": "vscode",
         "configBasePath": "$Home/AppData/Roaming/Code/User",
